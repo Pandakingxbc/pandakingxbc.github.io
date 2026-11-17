@@ -1,12 +1,89 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>杨植 Zhi Yang | 北京理工大学</title><meta name="description" content="杨植，北京理工大学人工智能硕士研究生。Agent 系统、长期记忆与具身导航。"><link rel="stylesheet" href="assets/css/minimal-light.css"><link rel="stylesheet" href="assets/css/publications.css"><link rel="stylesheet" href="style.css"></head><body><div class="wrapper"><header><a class="image avatar" href="#about"><img src="assets/portrait.png" alt="杨植的个人照片"></a><h1>杨植 Zhi Yang</h1><div class="position">M.Sc. Student</div><div>北京理工大学 · 自动化学院</div><div>Beijing Institute of Technology</div><p class="email"><a href="mailto:yangzhi0776@163.com">yangzhi0776 (at) 163.com</a></p><div class="profile-links"><a href="https://github.com/Pandakingxbc" target="_blank" rel="noopener">GitHub</a><span> / </span><a href="mailto:yangzhi0776@163.com">Email</a></div><nav aria-label="页面导航"><a href="#about">关于</a> · <a href="#projects">项目</a> · <a href="#publications">论文</a> · <a href="#experience">经历</a></nav></header><section>
-<h2 id="about">About Me</h2><p>我目前是北京理工大学自动化学院人工智能专业硕士研究生，预计于 2027 年 6 月毕业。目前在腾讯云实习，参与 <a href="https://github.com/TencentCloud/Octop">Octop</a> 开源 Agent 平台的研发。</p><p>我的工作涵盖 Agent 系统与具身导航：一方面研究智能体如何利用空间记忆与环境线索进行探索和决策，另一方面构建上下文运行时、长期记忆与多智能体协作系统。</p>
-<h2>Research Interests</h2><ul><li><strong>Agent Systems:</strong> 上下文管理、长期记忆、多智能体协作。</li><li><strong>Embodied Intelligence:</strong> 目标导航、空间记忆、探索与长程决策。</li></ul>
-<h2 id="projects">Projects</h2><p><strong><a href="https://github.com/TencentCloud/Octop">Octop</a></strong> · 腾讯云开源 Agent 平台<br>参与核心研发，主要负责上下文运行时、工具渐进加载、上下文回收与多 Agent 协作。</p><p><strong><a href="https://github.com/TencentCloud/Octop">OctopMemory</a></strong> · Agent 长期记忆系统<br>设计与实现证据驱动的记忆架构，将长期状态与工作上下文解耦，按当前任务检索、核验和组织证据。</p>
-<h2 id="publications">Publications</h2><div class="publications"><ol class="bibliography"><li><div class="pub-row"><div class="col-sm-3 abbr figure"><button id="expand" aria-label="放大 InfoNav 价值地图"><img class="teaser img-fluid z-depth-1" src="assets/infonav-value-map.png" alt="InfoNav 论文第二页的价值地图"></button><abbr class="badge">NeurIPS</abbr></div><div class="col-sm-9 paper"><div class="title"><a href="assets/infonav.pdf" target="_blank">InfoNav: A Unified Value Framework Integrating Semantic Relevance and Information Gain for Zero-Shot Object Goal Navigation</a></div><div class="author"><strong>Zhi Yang</strong>, Chengpu Yu, Gonzalo Ferrer</div><div class="periodical"><em>Neural Information Processing Systems <strong>(NeurIPS)</strong>, 2026.</em></div><div class="links"><a class="btn btn-sm z-depth-0" href="assets/infonav.pdf" target="_blank">PDF</a><button class="btn btn-sm z-depth-0" id="figure-link">Figure</button></div></div></div></li>
-<li class="text-paper"><div class="title">PRISM: Physically Grounded ReAct via Interactive Spatial Memory for Zero-Shot Multimodal Goal Navigation</div><div class="author">第一作者</div><div class="periodical"><em>AAAI 2027 · Under review</em></div><p>交互式空间记忆与具身推理。</p></li>
-<li class="text-paper"><div class="title">SkillNav: A Multi-Agent Blackboard for Hallucination-Resistant Zero-Shot Object Navigation</div><div class="author">第一作者</div><div class="periodical"><em>EMNLP 2026 · GroundLM Workshop</em></div><p>通过共享信念状态与证据核验，减少多智能体导航中的幻觉传播。</p></li>
-<li class="text-paper"><div class="title">Hierarchical Fast-Slow ReAct Agent for Zero-Shot Object-Goal Navigation</div><div class="author">第二作者</div><div class="periodical"><em>AAAI 2027 · Under review</em></div><p>事件触发的快慢推理与长程规划。</p></li></ol></div>
-<h2 id="experience">Experience</h2><ul><li><strong>腾讯云</strong>，Agent 研发实习生<br>2026.05 — 至今</li><li><strong>青葵制造</strong>，AI Agent 与多模态系统开发工程师<br>2026.02 — 2026.04</li></ul>
-<h2>Education</h2><ul><li><strong>北京理工大学</strong>，人工智能硕士在读，2024 — 2027（预计）</li><li><strong>香港城市大学</strong>，计算机理学硕士，2023 — 2024</li><li><strong>北京工业大学</strong>，自动化工学学士，2019 — 2023</li></ul><br><p><small>© 2026 杨植 · Based on the <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p></section></div>
-<dialog id="figure-dialog" aria-label="InfoNav 价值地图大图"><button id="close" aria-label="关闭大图">关闭 ×</button><img src="assets/infonav-value-map.png" alt="InfoNav 价值地图高清原图"><p>InfoNav · Figure 1 · Unified value-driven navigation</p></dialog><script>const modal=document.getElementById('figure-dialog');for(const id of ['expand','figure-link'])document.getElementById(id).onclick=()=>modal.showModal();document.getElementById('close').onclick=()=>modal.close();modal.addEventListener('click',e=>{if(e.target===modal)modal.close()});</script></body></html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>杨植 Zhi Yang | 具身导航与 Agent 记忆</title>
+<meta name="description" content="杨植，北京理工大学人工智能硕士研究生，InfoNav 第一作者，腾讯云 Octop 贡献者。研究具身导航，开发 Agent 长期记忆与上下文管理系统。">
+<link rel="stylesheet" href="assets/css/minimal-light.css"><link rel="stylesheet" href="assets/css/publications.css"><link rel="stylesheet" href="style.css">
+</head>
+<body><div class="wrapper">
+<header>
+<a class="image avatar" href="#about"><img src="assets/portrait.png" alt="杨植的个人照片"></a>
+<h1>杨植 Zhi Yang</h1><div class="position">人工智能硕士研究生</div><div>北京理工大学 · 自动化学院</div><div>Beijing Institute of Technology</div>
+<p class="email"><a href="mailto:yangzhi0776@163.com">yangzhi0776 (at) 163.com</a></p>
+<div class="profile-links"><a href="https://github.com/Pandakingxbc" target="_blank" rel="noopener">GitHub</a><span> / </span><a href="mailto:yangzhi0776@163.com">Email</a></div>
+<nav aria-label="页面导航"><a href="#about">关于</a> · <a href="#publications">研究</a> · <a href="#projects">项目</a> · <a href="#experience">经历</a></nav>
+</header>
+<section aria-label="个人介绍与工作">
+<h2 id="about">关于我</h2>
+<p>我是杨植，北京理工大学人工智能专业硕士研究生，预计于 2027 年 6 月毕业。目前在腾讯云参与 <a href="https://github.com/TencentCloud/Octop">Octop</a> 开源 Agent 平台研发，主要做上下文管理、长期记忆和多智能体协作。</p>
+<p>我的研究方向是具身导航，第一作者论文 <a href="#publications">InfoNav</a> 被 NeurIPS 2026 主会接收。最近，我也在研究 Agent 如何从跨会话历史中找到依据、处理信息更新，并在证据不足时避免猜测。</p>
+<p class="contact-note">欢迎交流 Agent 记忆评测、长程任务中的状态维护，以及具身导航中的探索与决策。可以通过<a href="mailto:yangzhi0776@163.com">邮件</a>联系我。</p>
+
+<h2 id="publications">代表研究</h2>
+<div class="publications"><ol class="bibliography"><li>
+<div class="pub-row"><div class="col-sm-3 abbr figure">
+<button id="expand" aria-label="放大 InfoNav 价值地图"><img class="teaser img-fluid z-depth-1" src="assets/infonav-value-map.png" alt="InfoNav 将语义相关性与信息增益结合的导航价值地图"></button><abbr class="badge">NeurIPS</abbr>
+</div><div class="col-sm-9 paper">
+<div class="title"><a href="assets/infonav.pdf" target="_blank" rel="noopener">InfoNav: A Unified Value Framework Integrating Semantic Relevance and Information Gain for Zero-Shot Object Goal Navigation</a></div>
+<div class="author"><strong>Zhi Yang</strong>, Chengpu Yu, Gonzalo Ferrer</div>
+<div class="periodical">NeurIPS 2026 · 主会接收 · 第一作者</div>
+<div class="links"><a class="btn btn-sm z-depth-0" href="assets/infonav.pdf" target="_blank" rel="noopener">论文 PDF</a><button class="btn btn-sm z-depth-0" id="figure-link">查看配图</button></div>
+</div></div>
+<p class="research-summary">机器人在陌生环境中寻找目标时，需要在“去最可能找到目标的地方”和“探索还不了解的区域”之间作出选择。InfoNav 将语义相关性与信息增益纳入统一的价值框架，用于零样本目标导航。</p>
+</li></ol></div>
+
+<h2 id="projects">开源与工程</h2>
+<article class="project" aria-labelledby="memory-title">
+<h3 id="memory-title">OctopMemory <span class="subtitle">Agent 长期记忆</span></h3>
+<p class="role">Octop 的长期记忆模块 · 核心设计与实现</p>
+<p>我负责设计和实现 Octop 的长期记忆系统。系统保留原始证据、时间和信息变化记录，在回答时按问题查找相关历史；涉及跨会话推理或前后信息冲突时，再进一步读取和核对来源。</p>
+<p>历史信息保存在模型之外，每次回答只加载当前需要的部分。我重点处理三个问题：过去的信息是否仍然有效、回答能否找到依据，以及检索过程会占用多少上下文。</p>
+<p class="result"><strong>87.6%</strong> Judge Accuracy <span>LongMemEval · 500 题 · 项目自测</span></p>
+<details><summary>分类结果与评测说明</summary>
+<table><caption>LongMemEval 项目自测结果</caption><thead><tr><th scope="col">任务</th><th scope="col">准确率</th></tr></thead><tbody>
+<tr><th scope="row">时间推理</th><td>91.7%</td></tr><tr><th scope="row">知识更新</th><td>91.0%</td></tr><tr><th scope="row">拒答</th><td>86.7%</td></tr>
+</tbody></table>
+<p class="evaluation-note">以上为当前项目配置下的自测结果，不作为不同模型或评测配置之间的直接比较。</p>
+</details>
+<p class="project-links"><a href="https://github.com/TencentCloud/Octop">所属项目：Octop →</a></p>
+</article>
+<article class="project" aria-labelledby="octop-title">
+<h3 id="octop-title"><a href="https://github.com/TencentCloud/Octop">Octop</a> <span class="subtitle">上下文管理与多智能体协作</span></h3>
+<p class="role">腾讯云开源 Agent 平台 · 核心贡献者</p>
+<p>我参与上下文运行时研发，让工具定义按任务需要加载，将过长的工具输出保存为可回查的文件，并在长程任务中整理历史上下文。</p>
+<p>在缓存优化中，我通过请求回放分析父 Agent 与子 Agent 的共享前缀，发现工具定义的插入和排序变化会影响缓存命中。固定工具排序、调整任务工具的位置后，在所测暖缓存场景中，端到端延迟从 <strong>6.5 秒降到 2.9 秒，约降低 55%</strong>。</p>
+<p>我也实现了多专家协作与后台任务机制：各专家在独立上下文中检索和推理，再向协调 Agent 返回结论，避免把全部中间过程塞进主对话。</p>
+<p class="project-links"><a href="https://github.com/TencentCloud/Octop">代码仓库 →</a></p>
+</article>
+
+<h2 id="other-research">其他研究</h2>
+<div class="publications other-research"><ol class="bibliography">
+<li class="text-paper"><div class="title">SkillNav: A Multi-Agent Blackboard for Hallucination-Resistant Zero-Shot Object Navigation</div><div class="periodical">EMNLP 2026 · GroundLM Workshop 接收 · 第一作者</div><p>让多个导航 Agent 共享带有证据来源的状态，并在任务交接时检查信息是否一致，减少错误在协作过程中继续传播。</p></li>
+<li class="text-paper"><div class="title">PRISM: Physically Grounded ReAct via Interactive Spatial Memory for Zero-Shot Multimodal Goal Navigation</div><div class="periodical">AAAI 2027 · 在审 · 第一作者</div><p>把观测、空间关系、历史轨迹和行动反馈保存在可交互的空间记忆中，帮助智能体在长程导航中维护对环境的理解。</p></li>
+<li class="text-paper"><div class="title">Hierarchical Fast-Slow ReAct Agent for Zero-Shot Object-Goal Navigation</div><div class="periodical">AAAI 2027 · 在审 · 第二作者</div><p>将局部动作与全局规划分开，在关键事件发生时触发较慢的推理，减少不必要的模型调用。</p></li>
+</ol></div>
+
+<h2 id="experience">工作经历</h2>
+<ul class="experience-list">
+<li><strong>腾讯云</strong> · Agent 研发实习生<br><span class="role">2026.05 — 至今</span><br>参与 Octop 的上下文运行时、长期记忆与多智能体协作研发。</li>
+<li><strong>青葵制造</strong> · AI Agent 与多模态系统开发工程师<br><span class="role">2026.02 — 2026.04</span><br>开发多模态长期记忆系统，处理文本、文档、图片、音频和视频的接入与检索，并支持回查视频中的对应片段。</li>
+</ul>
+<h2>教育经历</h2><ul>
+<li><strong>北京理工大学</strong> · 人工智能硕士在读 · 2024 — 2027（预计）</li>
+<li><strong>香港城市大学</strong> · 计算机理学硕士 · 2023 — 2024</li>
+<li><strong>北京工业大学</strong> · 自动化工学学士 · 2019 — 2023</li>
+</ul>
+<p class="site-footer">更新于 2026 年 11 月 · © 2026 杨植<br>Based on the <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</p>
+</section></div>
+<dialog id="figure-dialog" aria-label="InfoNav 价值地图大图"><button id="close" aria-label="关闭大图">关闭 ×</button><img src="assets/infonav-value-map.png" alt="InfoNav 价值地图高清原图"><p>InfoNav · Unified value-driven navigation</p></dialog>
+<script>
+const modal = document.getElementById('figure-dialog');
+for (const id of ['expand', 'figure-link']) document.getElementById(id).onclick = () => modal.showModal();
+document.getElementById('close').onclick = () => modal.close();
+modal.addEventListener('click', event => {
+  const bounds = modal.getBoundingClientRect();
+  if (event.target === modal && (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom)) modal.close();
+});
+</script>
+</body></html>
