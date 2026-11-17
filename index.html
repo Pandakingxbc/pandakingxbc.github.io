@@ -16,9 +16,11 @@
 </header>
 <section aria-label="个人介绍与工作">
 <h2 id="about">关于我</h2>
-<p>我是杨植，北京理工大学人工智能专业硕士研究生，预计于 2027 年 6 月毕业。目前在腾讯云参与 <a href="https://github.com/TencentCloud/Octop">Octop</a> 开源 Agent 平台研发，主要做上下文管理、长期记忆和多智能体协作。</p>
-<p>我的研究方向是具身导航，第一作者论文 <a href="#publications">InfoNav</a> 被 NeurIPS 2026 主会接收。最近，我也在研究 Agent 如何从跨会话历史中找到依据、处理信息更新，并在证据不足时避免猜测。</p>
-<p class="contact-note">欢迎交流 Agent 记忆评测、长程任务中的状态维护，以及具身导航中的探索与决策。可以通过<a href="mailto:yangzhi0776@163.com">邮件</a>联系我。</p>
+<p>我是杨植，北京理工大学自动化学院人工智能专业硕士研究生，预计于 2027 年 6 月毕业。目前在腾讯云参与 <a href="https://github.com/TencentCloud/Octop">Octop</a> 开源 Agent 平台的核心研发，负责上下文管理、长期记忆与多智能体协作。此前，我在香港城市大学获得计算机理学硕士学位。</p>
+<p>我关注<strong>长程任务中的记忆与决策</strong>：当任务跨越多轮交互、多个会话，甚至需要在物理环境中持续行动时，智能体如何记住已经发生的事、更新对当前状态的判断，并据此选择下一步行动？这个问题贯穿了我的系统开发与具身导航研究。</p>
+<p>在 <strong>Agent 长期记忆（Agent Memory）</strong>方面，我设计和实现了 <a href="#memory-title">OctopMemory</a>，保留原始证据及其时间、来源和状态变化，支持跨会话检索、信息更新与冲突核验。我也关注<strong>上下文工程（Context Engineering）</strong>：根据当前任务组织模型需要的信息，让工具按需加载、历史记录能够回查，并让多个 Agent 在独立上下文中协作。这些工作既需要验证回答是否正确，也需要考虑上下文开销与执行延迟。</p>
+<p>在<strong>具身智能（Embodied AI）</strong>方面，我研究零样本目标导航中的探索策略、空间记忆与多智能体推理。第一作者论文 <a href="#publications">InfoNav</a> 被 <strong>NeurIPS 2026 主会</strong>接收，将语义相关性与信息增益结合，用于判断下一步应该去哪里寻找目标。我希望进一步探索，智能体如何把持续获得的观测和交互经验，转化为后续行动中可利用的记忆。</p>
+<p class="contact-note">欢迎交流 Agent 长期记忆、上下文工程、空间记忆与长程决策，也欢迎讨论相关评测和开源实现。可以通过<a href="mailto:yangzhi0776@163.com">邮件</a>联系我。</p>
 
 <h2 id="publications">代表研究</h2>
 <div class="publications"><ol class="bibliography"><li>
