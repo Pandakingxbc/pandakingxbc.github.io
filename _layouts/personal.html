@@ -18,7 +18,7 @@
         <img class="portrait" src="/assets/img/zhi-yang-profile.png" width="176" height="176" alt="Zhi Yang outdoors in a forest" />
         <h1>Zhi Yang</h1>
         <p class="chinese-name" lang="zh-CN">杨植</p>
-        <p class="role">Agent R&amp;D Intern<br /><span>Tencent Cloud</span></p>
+        <p class="role">Agent R&amp;D Intern<br /><span>Tencent Cloud · May–Nov 2026</span></p>
         <p class="role">M.Eng. Student<br /><span>Beijing Institute of Technology</span></p>
       </div>
       <div class="interests">
@@ -36,15 +36,17 @@
       <p class="location">Beijing, China</p>
     </aside>
     <main id="main">
-      <nav aria-label="Page sections"><a href="#about">About</a><a href="#work">Work</a><a href="#education">Education</a></nav>
+      <nav aria-label="Page sections">
+        <a href="#about">About</a><a href="#publications">Publications</a><a href="#experience">Experience</a><a href="#blog">Blog</a>
+      </nav>
       <section id="about">
         <p class="eyebrow">RESEARCH &amp; ENGINEERING</p>
         <h2>About</h2>
         <p>
           I am a master's student in Artificial Intelligence at
-          <strong>Beijing Institute of Technology</strong> and an <strong>Agent R&amp;D Intern at Tencent Cloud</strong>, where I contribute to
-          <strong>Octop</strong>, an open-source agent platform. My work connects agent systems engineering with research on long-term memory and
-          embodied planning.
+          <strong>Beijing Institute of Technology</strong> and worked as an <strong>Agent R&amp;D Intern at Tencent Cloud</strong> from May to
+          November 2026, contributing to <a href="https://github.com/TencentCloud/Octop"><strong>Octop</strong></a
+          >, an open-source agent platform. My work connects agent systems engineering with research on long-term memory and embodied planning.
         </p>
         <p>
           I am interested in how agents maintain useful context, retrieve relevant experience, and turn observations into decisions and actions over
@@ -57,43 +59,49 @@
           <p>How can agents remember what matters and use it to act over long horizons?</p>
         </div>
       </section>
-      <section id="work">
-        <h2>Current Work</h2>
+      <section id="publications">
+        <h2>Publications</h2>
+        <article class="publication">
+          <a class="paper-preview" href="https://openreview.net/forum?id=lzhhlAlmjK" aria-label="Read the InfoNav paper">
+            <img
+              src="/assets/img/infonav-navigation.png"
+              alt="InfoNav navigation example showing semantic and information value regions, a planned path, and observations at three time steps"
+              width="828"
+              height="510"
+              loading="lazy"
+            />
+          </a>
+          <div class="paper-details">
+            <span class="venue">NeurIPS 2026</span>
+            <h3>InfoNav: A Unified Value Framework Integrating Semantic Relevance and Information Gain for Zero-Shot Object Goal Navigation</h3>
+            <p class="authors"><strong>Zhi Yang</strong>, Chengpu Yu, Gonzalo Ferrer</p>
+            <p class="paper-summary">
+              Bringing semantic relevance and information gain into a unified value framework for efficient zero-shot object-goal navigation.
+            </p>
+            <div class="paper-links">
+              <a href="https://openreview.net/forum?id=lzhhlAlmjK">Paper ↗</a><a href="https://github.com/Pandakingxbc/InfoNav">Code ↗</a
+              ><a href="https://neurips.cc/virtual/2026/poster/149947">Conference ↗</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
         <article class="entry">
           <div class="entry-heading">
             <h3>Agent R&amp;D Intern</h3>
-            <span class="date">May 2026 — Present</span>
+            <span class="date">May 2026 — Nov 2026</span>
           </div>
           <p class="organization">Tencent Cloud · Beijing</p>
           <p>
-            I contribute to Octop's agent runtime and memory systems, working on context budgeting and compaction, on-demand tool loading,
-            prompt-cache optimization, and multi-agent coordination.
+            I contributed to <a href="https://github.com/TencentCloud/Octop">Octop</a>'s agent runtime and memory systems, working on context
+            budgeting and compaction, on-demand tool loading, prompt-cache optimization, and multi-agent coordination.
           </p>
           <p>
-            My memory work focuses on preserving source evidence and assembling relevant context for the agent's current task, rather than continually
+            My memory work focused on preserving source evidence and assembling relevant context for the agent's current task, rather than continually
             accumulating interaction history.
           </p>
         </article>
-        <div class="focus-grid">
-          <article>
-            <span class="focus-number">01</span>
-            <h3>Agent Systems</h3>
-            <p>Runtime, context engineering, tool use, and collaboration between agents.</p>
-          </article>
-          <article>
-            <span class="focus-number">02</span>
-            <h3>Long-Term Memory</h3>
-            <p>Evidence-grounded retrieval and task-specific context construction.</p>
-          </article>
-          <article>
-            <span class="focus-number">03</span>
-            <h3>Embodied Planning</h3>
-            <p>Spatial memory, environment understanding, and navigation under uncertainty.</p>
-          </article>
-        </div>
-      </section>
-      <section id="education">
-        <h2>Education</h2>
         <article class="entry education">
           <div class="entry-heading">
             <h3>Beijing Institute of Technology</h3>
@@ -116,6 +124,14 @@
           </div>
           <p class="organization">B.Eng. in Automation</p>
         </article>
+      </section>
+      <section id="blog" aria-labelledby="blog-heading">
+        <h2 id="blog-heading">Blog</h2>
+        <p class="blog-intro">Notes and reflections on building agents, long-term memory, and intelligence in the physical world.</p>
+        <div class="blog-empty">
+          <span class="note-label">THOUGHTS IN PROGRESS</span>
+          <p>I'm collecting ideas and lessons from research and engineering. Essays will appear here as they take shape.</p>
+        </div>
       </section>
       <footer><span>© 2026 Zhi Yang</span><a href="mailto:yangzhi0776@163.com">Let's connect ↗</a></footer>
     </main>
