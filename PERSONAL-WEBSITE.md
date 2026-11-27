@@ -18,7 +18,7 @@ Edit `_layouts/personal.html` to update the biography, experience, and publicati
 
 ## Preview and deploy
 
-Follow the repository's INSTALL.md for the full Jekyll environment. Run `bundle exec jekyll serve` and visit http://localhost:4000/ to preview. Changes pushed to `main` trigger `.github/workflows/deploy.yml`, which builds the site and publishes `_site` to `gh-pages`.
+Follow the repository's INSTALL.md for the full Jekyll environment. Run `bundle exec jekyll serve` and visit http://localhost:4000/ to preview. Changes pushed to `main` trigger `.github/workflows/deploy.yml`, which builds the site and uploads `_site` as a Pages artifact and publishes it through the official GitHub Pages deployment action.
 
 ## Featured projects
 
